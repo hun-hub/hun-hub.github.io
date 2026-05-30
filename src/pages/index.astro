@@ -1,0 +1,471 @@
+---
+const basePath = import.meta.env.BASE_URL;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sukhun Ko</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="profile-header">
+    <img src={`${basePath}profile.jpg`} alt="Sukhun Ko" class="profile-img" />
+    <div class="profile-info">
+      <h1>Sukhun Ko</h1>
+      <p class="greeting">Hi! Thanks for visiting my profile page.</p>
+      <p>
+        I'm an M.S. student at
+        <a href="https://cmlab.cau.ac.kr/" target="_blank" rel="noopener noreferrer" class="cmlab-link">
+          <strong>Creative Vision and Multimedia Lab (CMLab), Chung-Ang University</strong>
+        </a>,
+        supervised by
+        <a href="https://sites.google.com/view/ozbro/" target="_blank" rel="noopener noreferrer" class="cmlab-link">
+          <strong>Prof. Jihyong Oh</strong>
+        </a>.
+      </p>
+      <div class="tags">
+        <span class="tag">#Diffusion</span>
+        <span class="tag">#Image Editing &amp; Compositing</span>
+        <span class="tag">#Implicit Neural Representations</span>
+        <span class="tag">#3D Reconstruction</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Summary -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      My research focuses on <strong>diffusion-based generation</strong>,
+      <strong>implicit neural representations</strong>, and
+      <strong>3D reconstruction</strong>. I am broadly interested in building
+      models that integrate low-level visual structure with high-level semantic
+      control.
+    </p>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications">
+    <h2>Publications</h2>
+
+    <!-- Top-tier Conference -->
+    <div class="pub-category">
+      <h3 class="pub-category-title">International Top-tier Conference</h3>
+      <ul class="paper-list">
+        <li>
+          <strong class="paper-title">
+            FLAIR: Frequency- and Locality-Aware Implicit Neural Representations
+          </strong>
+          <div class="authors">
+            <span class="me">Sukhun Ko</span>, SeokHyun Youn, Dahyeon Kye, Kyle Min, Chanho Eom, and Jihyong Oh<sup>†</sup>
+          </div>
+          <div class="venue">
+            CVPR 2026 (Findings) &nbsp;·&nbsp; <em class="collab-oracle">Collab. w/ <a href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">Oracle</a></em>
+          </div>
+          <div class="paper-links">
+            <a href="https://arxiv.org/abs/2508.13544" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
+            <a href="https://cmlab-korea.github.io/FLAIR/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
+            <a href="https://github.com/CMLab-Korea/CVPRF26-FLAIR" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Under Review -->
+    <div class="pub-category">
+      <h3 class="pub-category-title">Under Review</h3>
+      <ul class="paper-list">
+        <li>
+          <strong class="paper-title">
+            Chameleon: Style-Content Disentangled Framework for Cross-Domain Object Compositing
+          </strong>
+          <div class="authors">
+            <span class="me">Sukhun Ko</span>, Soo Ye Kim<sup>†</sup>, and Jihyong Oh<sup>†</sup>
+          </div>
+          <div class="venue">Under Review &nbsp;·&nbsp; <em class="collab-adobe">Collab. w/ <a href="https://research.adobe.com/" target="_blank" rel="noopener noreferrer">Adobe Research</a></em></div>
+          <div class="paper-links">
+            <a href="https://cmlab-korea.github.io/Chameleon/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
+          </div>
+        </li>
+        <li>
+          <strong class="paper-title">
+            Band-Localized Splatting: Frequency-Selective Appearance Modeling for High-Frequency Surface Reconstruction
+          </strong>
+          <div class="authors">
+            <span class="me">Sukhun Ko</span><sup>*</sup>, Seokhyun Youn<sup>*</sup>, Weeyoung Kwon, and Jihyong Oh<sup>†</sup>
+          </div>
+          <div class="venue">Under Review</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Journal -->
+    <div class="pub-category">
+      <h3 class="pub-category-title">Journal</h3>
+      <ul class="paper-list">
+        <li>
+          <strong class="paper-title">
+            AceVFI: A Comprehensive Survey of Advances in Video Frame Interpolation
+          </strong>
+          <div class="authors">
+            Dahyeon Kye, Changhyun Roh, <span class="me">Sukhun Ko</span>, Chanho Eom, and Jihyong Oh<sup>†</sup>
+          </div>
+          <div class="venue">IEEE TCSVT, 2026</div>
+          <div class="paper-links">
+            <a href="https://ieeexplore.ieee.org/document/11427010" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
+            <a href="https://github.com/CMLab-Korea/Awesome-Video-Frame-Interpolation" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </li>
+        <li>
+          <strong class="paper-title">
+            Implicit Neural Representations: A Holistic Survey of Techniques, Applications, and Challenges
+          </strong>
+          <div class="authors">
+            <span class="me">Sukhun Ko</span>, Chanho Eom, and Jihyong Oh<sup>†</sup>
+          </div>
+          <div class="venue">IEIE SPC, 2026</div>
+        </li>
+      </ul>
+    </div>
+
+    <p class="notation"><sup>*</sup> Equal contribution. &nbsp; <sup>†</sup> Corresponding author.</p>
+  </section>
+
+  <!-- Work Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul class="experience-list">
+      <li class="experience-item">
+        <h3>Generative AI Intern, <a href="https://connectbrick.com/" target="_blank" rel="noopener noreferrer">ConnectBrick</a></h3>
+        <p class="exp-meta">Sep. 2024 – Dec. 2024</p>
+        <p>
+          Contributed to <a href="https://studio.jector.ai/intro/foodstyler" target="_blank" rel="noopener noreferrer"><strong>FoodStyler</strong></a>, a generative AI-based
+          image compositing project under <a href="https://www.instagram.com/jector.ai/" target="_blank" rel="noopener noreferrer">Jector AI</a>.
+        </p>
+      </li>
+      <li class="experience-item">
+        <h3>Project Leader, Research Project with <a href="https://dexterstudios.com/" target="_blank" rel="noopener noreferrer">DEXTER STUDIOS</a></h3>
+        <p class="exp-meta">Sep. 2025 – Dec. 2025</p>
+        <p>
+          Led a commissioned research project, &ldquo;Backend Platform
+          Development for Mobile Application Development,&rdquo; funded by
+          DEXTER STUDIOS, focusing on <strong>generative AI-based style
+          transfer</strong>.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Research Interests -->
+  <section id="interests">
+    <h2>Research Interests</h2>
+    <div class="interests-grid">
+      <div class="interest-item">
+        <h3>Generative AI</h3>
+        <p>Flow Matching Models, Image Editing &amp; Compositing, Agentic Video Generation</p>
+      </div>
+      <div class="interest-item">
+        <h3>Low-Level Vision</h3>
+        <p>Implicit Neural Representations, Super-Resolution, Video Frame Interpolation</p>
+      </div>
+      <div class="interest-item">
+        <h3>3D Reconstruction</h3>
+        <p>Neural Radiance Fields, 3D Gaussian Splatting</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications -->
+  <section id="education">
+    <h2>Education &amp; Certifications</h2>
+    <ul class="education-list">
+      <li class="education-item">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-details">
+          <h3>M.S. in Imaging Science, AI Content</h3>
+          <p>Chung-Ang University, Seoul, South Korea</p>
+          <p class="edu-meta">2025 – Present &nbsp;·&nbsp; GPA: 4.47 / 4.5</p>
+        </div>
+      </li>
+      <li class="education-item">
+        <div class="edu-icon">📜</div>
+        <div class="edu-details">
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <p>Amazon Web Services</p>
+          <p class="edu-meta">Showcase foundational knowledge of <a href="https://aws.amazon.com/certification/" target="_blank" rel="noopener noreferrer">AWS cloud services</a> and cloud computing.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills &amp; Technologies</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Programming &amp; Development</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">Python</span>
+          <span class="skill-badge">C/C++</span>
+          <span class="skill-badge">Flask</span>
+          <span class="skill-badge">Android</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Data Science</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">NoSQL</span>
+          <span class="skill-badge">Tableau</span>
+          <span class="skill-badge">AWS S3</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>AI Frameworks &amp; Tools</h3>
+        <div class="skill-badges">
+          <span class="skill-badge">PyTorch</span>
+          <span class="skill-badge">TensorFlow</span>
+          <span class="skill-badge">OpenCV</span>
+          <span class="skill-badge">Docker</span>
+          <span class="skill-badge">Diffusers</span>
+          <span class="skill-badge">Gradio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Connect with Me</h2>
+    <div class="contact-links">
+      <a href="mailto:looloo330@cau.ac.kr"><i class="fas fa-envelope"></i> looloo330@cau.ac.kr</a>
+      <a href="https://github.com/hun-hub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> hun-hub</a>
+      <a href="https://www.linkedin.com/in/sukhun-ko-1bb5a438b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <p>© 2026 Sukhun Ko. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+<style is:global>
+  :root {
+    --accent: #3498db;
+    --accent-dark: #2c3e50;
+    --bg: #f7f9fc;
+    --card: #ffffff;
+    --text: #2d3748;
+    --muted: #6b7280;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--bg);
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Header */
+  .profile-header {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  .profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 30%;
+    transform: scale(1.15);
+    transform-origin: center 30%;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    flex-shrink: 0;
+  }
+  .profile-info h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    color: var(--accent-dark);
+    font-weight: 700;
+  }
+  .greeting { margin: 6px 0; color: var(--muted); }
+  .profile-info p { margin: 6px 0; }
+
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    background: var(--accent);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-weight: 500;
+  }
+
+  /* Sections */
+  section { margin-bottom: 44px; }
+  section h2 {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 8px;
+    color: var(--accent-dark);
+    font-size: 1.5rem;
+    margin: 0 0 18px;
+  }
+  section h3 {
+    color: var(--accent-dark);
+    font-size: 1.1rem;
+    margin: 0 0 6px;
+  }
+  section p { margin: 0 0 8px; }
+
+  /* Education */
+  .education-list, .experience-list, .paper-list { list-style: none; padding: 0; margin: 0; }
+  .education-item {
+    display: flex; align-items: flex-start; gap: 18px;
+    padding: 16px 20px; margin-bottom: 14px;
+    background: var(--card); border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .education-item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .edu-icon { font-size: 2rem; flex-shrink: 0; }
+  .edu-details p { margin: 2px 0; }
+  .edu-meta { color: var(--muted); font-size: 0.9rem; }
+
+  /* Work Experience */
+  .experience-item {
+    padding: 16px 20px; margin-bottom: 14px;
+    background: var(--card); border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .experience-item:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+  .exp-meta { color: var(--muted); font-size: 0.9rem; margin-top: -4px; }
+
+  .experience-item a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
+  }
+  .experience-item a:hover { color: var(--accent-dark); }
+  .experience-item h3 a { color: var(--accent); }
+
+  /* Publications */
+  .pub-category { margin-bottom: 26px; border-left: 3px solid var(--accent); padding-left: 16px; }
+  .pub-category-title { font-size: 1.15rem; color: var(--accent-dark); font-weight: 600; margin: 0 0 12px; }
+  .paper-list li {
+    padding: 14px 18px; margin-bottom: 12px;
+    background: var(--card); border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .paper-list li:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.08); }
+  .paper-title { color: #111; font-weight: 700; display: block; margin-bottom: 4px; }
+  .authors { color: #444; font-size: 0.95rem; margin: 4px 0; }
+  .authors .me { font-weight: 700; text-decoration: underline; }
+  .venue { color: var(--accent); font-weight: 600; font-size: 0.92rem; margin: 4px 0 8px; }
+  .venue em { color: var(--muted); font-weight: 500; }
+  .venue em.collab-oracle { color: #C74634; font-style: normal; font-weight: 600; }
+  .venue em.collab-adobe { color: #FA0F00; font-style: normal; font-weight: 600; }
+  .venue em.collab-oracle a,
+  .venue em.collab-adobe a { color: inherit; text-decoration: none; }
+  .venue em.collab-oracle a:hover,
+  .venue em.collab-adobe a:hover { text-decoration: underline; text-underline-offset: 3px; }
+
+  .paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+  .paper-links a {
+    display: inline-flex; align-items: center; gap: 4px;
+    background: var(--accent); color: #fff;
+    padding: 4px 10px; border-radius: 4px;
+    font-size: 0.85rem; font-weight: 500;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .paper-links a:hover { transform: translateY(-1px); text-decoration: none; opacity: 0.88; }
+  /* Differentiate Paper / Project / Code by icon */
+  .paper-links a:has(.fa-file-alt) { background: #489aec; }
+  .paper-links a:has(.fa-globe)    {
+    background: linear-gradient(90deg, #d97373, #d99a6c, #c8b15a, #7eaa6c, #6e94c0, #9982c4);
+  }
+  .paper-links a:has(.fa-github)   { background: #2d333b; }
+
+  /* CMLab + advisor links — CMLab brand navy */
+  .cmlab-link, .cmlab-link strong { color: #0d207f; }
+  .cmlab-link:hover { color: #0d207f; text-decoration: underline; text-underline-offset: 3px; }
+
+  .notation { color: var(--muted); font-size: 0.85rem; margin-top: 14px; }
+
+  /* Interests */
+  .interests-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+  }
+  .interest-item {
+    background: var(--card); padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+  .interest-item:hover { transform: translateY(-2px); }
+
+  /* Skills */
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+  }
+  .skill-group {
+    background: var(--card); padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  .skill-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .skill-badge {
+    background: var(--accent-dark); color: #fff;
+    padding: 5px 12px; border-radius: 5px;
+    font-size: 0.85rem; font-weight: 500;
+  }
+
+  /* Contact */
+  .contact-links { display: flex; flex-wrap: wrap; gap: 18px; }
+  .contact-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-weight: 500;
+  }
+
+  /* Footer */
+  .page-footer {
+    margin-top: 40px; padding: 18px 0;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  /* Responsive */
+  @media (max-width: 720px) {
+    .profile-header { flex-direction: column; text-align: center; }
+    .profile-img { width: 140px; height: 140px; }
+    .tags, .contact-links { justify-content: center; }
+  }
+</style>

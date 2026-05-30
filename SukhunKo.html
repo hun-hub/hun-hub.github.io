@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://weeyoungkwon.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weeyoung Kwon - profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-right: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .profile-info h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+        }
+
+        
+        nav {
+            margin-bottom: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            background-color: #2c3e50;
+            border-radius: 5px;
+        }
+
+        nav li {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover, nav a.active {
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+
+        
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        
+        .tags {
+            margin-top: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-right: 8px;
+            font-size: 0.85em;
+            pointer-events: none; 
+        }
+
+        
+        .paper-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .paper-links {
+            margin-top: 8px; 
+        }
+
+        .paper-links a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 4px 8px;
+            background-color: #3498db; 
+            color: white; 
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .paper-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        
+        .paper-links a:nth-child(1) {
+            background-color: #489aec; 
+        }
+
+        .paper-links a:nth-child(1):hover {
+            background-color: #34495e;
+        }
+
+        
+        .paper-links a:nth-child(2) {
+            background-color: #333; 
+        }
+
+        .paper-links a:nth-child(2):hover {
+            background-color: #24292e;
+        }
+
+        
+        .paper-links a:nth-child(3) {
+            background-color: #c482e1; 
+        }
+
+        .paper-links a:nth-child(3):hover {
+            background-color: #c482e1;
+        }
+
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            padding: 8px 16px;
+            background-color: #34495e;
+            color: white;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+
+        
+        .contact-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #3498db;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .education-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .edu-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: #3498db;
+        }
+
+        .edu-details h3 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+
+        .edu-details p {
+            margin: 0 0 5px 0;
+        }
+
+        .edu-date {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        
+        .paper-title {
+            color: black;
+            font-weight: bold;
+        }
+
+        
+        .first-author {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        
+        .venue {
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        
+        .experience {
+            margin: 15px 0;
+        }
+
+        .experience-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: rgba(240, 240, 240, 0.7);
+            padding: 10px 15px;
+            border-radius: 6px;
+        }
+
+        .year {
+            font-weight: bold;
+            margin-right: 15px;
+            color: #333;
+        }
+
+        .journal {
+            color: #444;
+        }
+
+        
+        .patent-item {
+            background-color: rgba(240, 240, 240, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .patent-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .patent-id {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .patent-date {
+            color: #666;
+        }
+
+        .patent-titles {
+            margin-bottom: 10px;
+        }
+
+        .patent-title-kr, .patent-title-en {
+            margin: 5px 0;
+        }
+
+        .patent-authors {
+            font-style: italic;
+            color: #555;
+        }
+
+        
+        .publication-category {
+            margin-bottom: 25px;
+            border-left: 3px solid #3498db;
+            padding-left: 15px;
+        }
+
+        
+        .category-title {
+            font-size: 1.25rem;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        
+        .authors {
+            margin: 5px 0;
+            color: #444;
+        }
+
+        .coauthor {
+            font-weight: 500;
+            color: #555;
+        }
+
+        
+        .date {
+            color: #7f8c8d;
+        }
+
+        
+        .paper-links a.journal-link {
+            background-color: #16a085; 
+        }
+
+        .paper-links a.journal-link:hover {
+            background-color: #1abc9c;
+        }
+
+        
+        .conf-short {
+            color: #7f8c8d;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        
+        .paper-list li,
+        .patent-item,
+        #reviewer .paper-list li,
+        #patents .paper-list li,
+        .publication-category .paper-list li {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        
+        .paper-list li:hover,
+        .patent-item:hover,
+        #reviewer .paper-list li:hover,
+        #patents .paper-list li:hover,
+        .publication-category .paper-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: none !important; 
+        }
+
+        
+        .publication-category .paper-list li {
+            border-left: none;
+        }
+
+        
+        #patents .paper-list li:hover,
+        #reviewer .paper-list li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: none;
+        }
+
+        
+        .reviewer-header {
+            margin-bottom: 10px;
+        }
+
+        .reviewer-info {
+            text-align: left;
+        }
+
+        .year {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-right: 10px; 
+        }
+
+        .journal {
+            color: #2c3e50;
+        }
+
+        
+        .patent-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .patent-id {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .patent-date {
+            color: #3498db;
+        }
+
+        
+        .year {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .journal {
+            color: #3498db;
+        }
+
+        
+        .media-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .media-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .media-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .news-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #2c3e50;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s ease;
+        }
+
+        .news-title:hover {
+            color: #3498db;
+        }
+
+        .news-meta {
+            display: flex;
+            gap: 15px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+
+        .news-source {
+            font-weight: 500;
+            color: #3498db;
+        }
+
+        .news-date {
+            color: #95a5a6;
+        }
+
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-img {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./Weeyoung_Kwon .png" alt="Profile image" class="profile-img">
+        <div class="profile-info">
+            <h1>Weeyoung Kwon</h1>
+            <p>Hi! Thanks to visit my profile page!</p>
+            <p>
+                I'm a Research Student at 
+                <a href="https://cmlab.cau.ac.kr/" target="_blank"><strong>Creative Vision and Multimedia Lab (CMLab) in Chung-Ang University</strong></a>
+            </p>
+            <div class="tags">
+                <span class="tag">#Deep Learning</span>
+                <span class="tag">#Computer Vision</span>
+                <span class="tag">#3D Computer Vision</span>
+                <span class="tag">#Gaussian Splatting</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a research student at Creative Vision and Multimedia Lab (CMLab), Chung-Ang University.</p>
+        <p>My research interests include computer vision, 3D computer vision, dynamic scene modeling, and Gaussian splatting.</p>
+    </section>
+    
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>
+                <div class="education-item">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-details">
+                        <h3>M.S. in Artificial Intelligence</h3>
+                        <p>Chung-Ang University, Seoul, South Korea</p>
+                        <p class="edu-date">2025 - Present</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="education-item">
+                    <div class="edu-icon">🎓</div>
+                    <div class="edu-details">
+                        <h3>B.S. in Mathematics</h3>
+                        <p>Dong-A University, Busan, South Korea</p>
+                        <p class="edu-date">2019 - 2025</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        
+        <div class="publication-category">
+            <h3 class="category-title">International ✨Top-tier Conference</h3>
+            <ul class="paper-list">
+                <li>
+                    <strong style="color: black;">MoRel: Long-Range Flicker-Free 4D Motion Modeling via Anchor Relay-based Bidirectional Blending with Hierarchical Densification</strong>
+                    <div class="authors">
+                        [Sangwoon Kwak<sup>1*</sup>, <span class="first-author">Weeyoung Kwon<sup>2*</sup></span>, Jun Young Jeong<sup>1</sup>, Geonho Kim<sup>2</sup>, Won-Sik Cheong<sup>1</sup>, Jihyong Oh<sup>2†</sup>]
+                    </div>
+                    <div class="authors"><sup>1</sup>ETRI, <sup>2</sup>CMLab, Chung-Ang University</div>
+                    <span class="venue">CVPR 2026 (<strong style="color: #e74c3c;">🏅Highlight Paper Rate: 3.6% ≈ 578/16,092</strong>)</span>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/pdf/2512.09270" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                        <a href="https://cmlab-korea.github.io/MoRel/" target="_blank"><i class="fas fa-globe"></i> Project Page</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="publication-category">
+            <h3 class="category-title">Under Review</h3>
+            <ul class="paper-list">
+                <li>
+                    <strong style="color: black;">R3eVision: A Survey on Robust Rendering, Restoration, and Enhancement for 3D Low-Level Vision</strong>
+                    <div class="authors">[<span class="first-author">Weeyoung Kwon</span>, Jeahun Sung, Minkyu Jeon, Chanho Eom, and Jihyong Oh<sup>†</sup>]</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/pdf/2506.16262" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
+                        <a href="https://github.com/CMLab-Korea/Awesome-3D-Low-Level-Vision" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills &amp; Technologies</h2>
+        <div class="skills">
+            <div class="skill-badge">Python</div>
+            <div class="skill-badge">PyTorch</div>
+            <div class="skill-badge">Deep Learning</div>
+            <div class="skill-badge">Computer Vision</div>
+            <div class="skill-badge">3D Computer Vision</div>
+            <div class="skill-badge">Gaussian Splatting</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Connect with me</h2>
+        <div class="contact-links">
+            <a href="mailto:weeyoungkwon@cau.ac.kr"><i class="fas fa-envelope"></i> weeyoungkwon@cau.ac.kr</a>
+            <a href="https://www.linkedin.com/in/weeyoungkwon76936b311/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Weeyoung Kwon. All rights reserved.</p>
+    </footer>
+</body></html>
