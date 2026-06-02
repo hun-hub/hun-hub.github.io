@@ -35,6 +35,9 @@ const basePath = import.meta.env.BASE_URL;
         <span class="tag">#Image Editing &amp; Compositing</span>
         <span class="tag">#Implicit Neural Representations</span>
         <span class="tag">#3D Reconstruction</span>
+        <a href={`${basePath}Sukhun_Ko_CV.pdf`} target="_blank" rel="noopener noreferrer" class="cv-button">
+          <i class="fas fa-file-pdf"></i> Curriculum Vitae (CV)
+        </a>
       </div>
     </div>
   </header>
@@ -249,6 +252,7 @@ const basePath = import.meta.env.BASE_URL;
       <a href="mailto:looloo330@cau.ac.kr"><i class="fas fa-envelope"></i> looloo330@cau.ac.kr</a>
       <a href="https://github.com/hun-hub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> hun-hub</a>
       <a href="https://www.linkedin.com/in/sukhun-ko-1bb5a438b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href={`${basePath}Sukhun_Ko_CV.pdf`} target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> CV</a>
     </div>
   </section>
 
@@ -312,7 +316,19 @@ const basePath = import.meta.env.BASE_URL;
   .greeting { margin: 6px 0; color: var(--muted); }
   .profile-info p { margin: 6px 0; }
 
-  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .tags { margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+
+  /* CV button — sits inline next to the tags */
+  .cv-button {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--accent-dark); color: #fff;
+    padding: 5px 13px; border-radius: 6px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  .cv-button:hover { transform: translateY(-1px); opacity: 0.9; text-decoration: none; }
   .tag {
     background: var(--accent);
     color: #fff;
