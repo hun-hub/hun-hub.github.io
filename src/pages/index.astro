@@ -62,21 +62,27 @@ const basePath = import.meta.env.BASE_URL;
     <div class="pub-category">
       <h3 class="pub-category-title">International Top-tier Conference</h3>
       <ul class="paper-list">
-        <li>
-          <strong class="paper-title">
-            FLAIR: Frequency- and Locality-Aware Implicit Neural Representations
-          </strong>
-          <div class="authors">
-            <span class="me">Sukhun Ko</span>, SeokHyun Youn, Dahyeon Kye, Kyle Min, Chanho Eom, and Jihyong Oh<sup>†</sup>
+        <li class="paper-with-media">
+          <div class="paper-main">
+            <strong class="paper-title">
+              FLAIR: Frequency- and Locality-Aware Implicit Neural Representations
+            </strong>
+            <div class="authors">
+              <span class="me">Sukhun Ko</span>, SeokHyun Youn, Dahyeon Kye, Kyle Min, Chanho Eom, and Jihyong Oh<sup>†</sup>
+            </div>
+            <div class="venue">
+              CVPR 2026 (Findings) &nbsp;·&nbsp; <em class="collab-oracle">Collab. w/ <a href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">Oracle</a></em>
+            </div>
+            <div class="paper-links">
+              <a href="https://arxiv.org/abs/2508.13544" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
+              <a href="https://cmlab-korea.github.io/FLAIR/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
+              <a href="https://github.com/CMLab-Korea/CVPRF26-FLAIR" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+            </div>
           </div>
-          <div class="venue">
-            CVPR 2026 (Findings) &nbsp;·&nbsp; <em class="collab-oracle">Collab. w/ <a href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">Oracle</a></em>
-          </div>
-          <div class="paper-links">
-            <a href="https://arxiv.org/abs/2508.13544" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
-            <a href="https://cmlab-korea.github.io/FLAIR/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
-            <a href="https://github.com/CMLab-Korea/CVPRF26-FLAIR" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
-          </div>
+          <a class="paper-thumb" href={`${basePath}flair_cvpr.jpg`} target="_blank" rel="noopener noreferrer" aria-label="FLAIR poster at CVPR 2026, Denver">
+            <img src={`${basePath}flair_cvpr.jpg`} alt="FLAIR poster presentation at CVPR 2026, Denver" loading="lazy" />
+            <span class="paper-thumb-caption">CVPR 2026 · Denver</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -410,6 +416,24 @@ const basePath = import.meta.env.BASE_URL;
   .venue em.collab-oracle a:hover,
   .venue em.collab-adobe a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
+  /* Paper card with media (poster thumbnail) */
+  .paper-with-media { display: flex; gap: 18px; align-items: flex-start; }
+  .paper-main { flex: 1; min-width: 0; }
+  .paper-thumb {
+    flex-shrink: 0; width: 240px;
+    display: block; position: relative;
+    border-radius: 8px; overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .paper-thumb:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.18); text-decoration: none; }
+  .paper-thumb img { display: block; width: 100%; height: auto; }
+  .paper-thumb-caption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 5px 9px; font-size: 0.72rem; font-weight: 600;
+    color: #fff; background: linear-gradient(transparent, rgba(0,0,0,0.72));
+  }
+
   .paper-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
   .paper-links a {
     display: inline-flex; align-items: center; gap: 4px;
@@ -484,5 +508,7 @@ const basePath = import.meta.env.BASE_URL;
     .profile-header { flex-direction: column; text-align: center; }
     .profile-img { width: 140px; height: 140px; }
     .tags, .contact-links { justify-content: center; }
+    .paper-with-media { flex-direction: column; }
+    .paper-thumb { width: 100%; }
   }
 </style>
