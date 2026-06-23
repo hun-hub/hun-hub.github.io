@@ -74,7 +74,8 @@ const basePath = import.meta.env.BASE_URL;
               CVPR 2026 (Findings) &nbsp;·&nbsp; <em class="collab-oracle">Collab. w/ <a href="https://www.oracle.com/" target="_blank" rel="noopener noreferrer">Oracle</a></em>
             </div>
             <div class="paper-links">
-              <a href="https://arxiv.org/abs/2508.13544" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>
+              <a href="https://openaccess.thecvf.com/content/CVPR2026F/papers/Ko_FLAIR_Frequency-_and_Locality-Aware_Implicit_Neural_Representations_CVPRF_2026_paper.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+              <a href="https://arxiv.org/abs/2508.13544" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> arXiv</a>
               <a href="https://cmlab-korea.github.io/FLAIR/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Project</a>
               <a href="https://github.com/CMLab-Korea/CVPRF26-FLAIR" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
             </div>
@@ -445,7 +446,8 @@ const basePath = import.meta.env.BASE_URL;
   }
   .paper-links a:hover { transform: translateY(-1px); text-decoration: none; opacity: 0.88; }
   /* Differentiate Paper / Project / Code by icon */
-  .paper-links a:has(.fa-file-alt) { background: #489aec; }
+  .paper-links a:has(.fa-file-pdf) { background: #c0392b; } /* CVF proceedings */
+  .paper-links a:has(.fa-file-alt) { background: #489aec; } /* arXiv preprint */
   .paper-links a:has(.fa-globe)    {
     background: linear-gradient(90deg, #d97373, #d99a6c, #c8b15a, #7eaa6c, #6e94c0, #9982c4);
   }
