@@ -92,14 +92,20 @@ const basePath = import.meta.env.BASE_URL;
     <div class="pub-category">
       <h3 class="pub-category-title">International Conference</h3>
       <ul class="paper-list">
-        <li>
-          <strong class="paper-title">
-            Band-Localized Splatting: Frequency-Selective Appearance Modeling for High-Frequency Surface Reconstruction
-          </strong>
-          <div class="authors">
-            <span class="me">Sukhun Ko</span><sup>*</sup>, Seokhyun Youn<sup>*</sup>, Weeyoung Kwon, and Jihyong Oh<sup>†</sup>
+        <li class="paper-with-media">
+          <div class="paper-main">
+            <strong class="paper-title">
+              Band-Localized Splatting: Frequency-Selective Appearance Modeling for High-Frequency Surface Reconstruction
+            </strong>
+            <div class="authors">
+              <span class="me">Sukhun Ko</span><sup>*</sup>, Seokhyun Youn<sup>*</sup>, Weeyoung Kwon, and Jihyong Oh<sup>†</sup>
+            </div>
+            <div class="venue">ICIP 2026 Workshop (Oral)</div>
           </div>
-          <div class="venue">ICIP 2026 Workshop (Oral)</div>
+          <a class="paper-thumb" href={`${basePath}bls_icip2026.jpg`} target="_blank" rel="noopener noreferrer" aria-label="BLS oral presentation at ICIP 2026 Workshop">
+            <img src={`${basePath}bls_icip2026.jpg`} alt="Oral presentation of Band-Localized Splatting at ICIP 2026 Workshop" loading="lazy" />
+            <span class="paper-thumb-caption">ICIP 2026 Workshop · Oral</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -181,14 +187,20 @@ const basePath = import.meta.env.BASE_URL;
           transfer</strong>.
         </p>
       </li>
-      <li class="experience-item">
-        <h3>Research Intern, <a href="https://artsci.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA Art|Sci Center</a></h3>
-        <p class="exp-meta">Spring 2026</p>
-        <p>
-          Participated in the Research Internship Program at the UCLA Art|Sci Center
-          as part of an <strong>international research collaboration</strong> between art and science.
-          <a href={`${basePath}ucla_certificate.jpg`} target="_blank" rel="noopener noreferrer">[Certificate]</a>
-        </p>
+      <li class="experience-item paper-with-media">
+        <div class="paper-main">
+          <h3>Research Intern, <a href="https://artsci.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA Art|Sci Center</a></h3>
+          <p class="exp-meta">Spring 2026</p>
+          <p>
+            Participated in the Research Internship Program at the UCLA Art|Sci Center
+            as part of an <strong>international research collaboration</strong> between art and science.
+            <a href={`${basePath}ucla_internship.jpg`} target="_blank" rel="noopener noreferrer">[Certificate]</a>
+          </p>
+        </div>
+        <a class="paper-thumb" href={`${basePath}ucla_internship.jpg`} target="_blank" rel="noopener noreferrer" aria-label="UCLA Art|Sci Center research internship certificate">
+          <img src={`${basePath}ucla_internship.jpg`} alt="Certificate of Research Internship, UCLA Art|Sci Center, Spring 2026" loading="lazy" />
+          <span class="paper-thumb-caption">UCLA Art|Sci Center · Spring 2026</span>
+        </a>
       </li>
     </ul>
   </section>
