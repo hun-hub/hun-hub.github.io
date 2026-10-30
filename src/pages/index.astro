@@ -187,14 +187,19 @@ const basePath = import.meta.env.BASE_URL;
           transfer</strong>.
         </p>
       </li>
-      <li class="experience-item">
-        <h3>Research Intern, <a href="https://artsci.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA Art|Sci Center</a></h3>
-        <p class="exp-meta">Spring 2026</p>
-        <p>
-          Participated in the Research Internship Program at the UCLA Art|Sci Center
-          as part of an <strong>international research collaboration</strong> between art and science.
-          <a href={`${basePath}ucla_internship.jpg`} target="_blank" rel="noopener noreferrer">[Certificate]</a>
-        </p>
+      <li class="experience-item paper-with-media">
+        <div class="paper-main">
+          <h3>Research Intern, <a href="https://artsci.ucla.edu/" target="_blank" rel="noopener noreferrer">UCLA Art|Sci Center</a></h3>
+          <p class="exp-meta">Spring 2026</p>
+          <p>
+            Participated in the Research Internship Program at the UCLA Art|Sci Center
+            as part of an <strong>international research collaboration</strong> between art and science.
+          </p>
+        </div>
+        <a class="paper-thumb" href={`${basePath}ucla_internship.jpg`} target="_blank" rel="noopener noreferrer" aria-label="UCLA Art|Sci Center research internship certificate">
+          <img src={`${basePath}ucla_internship.jpg`} alt="Certificate of Research Internship, UCLA Art|Sci Center, Spring 2026" loading="lazy" />
+          <span class="paper-thumb-caption">UCLA Art|Sci Center · Spring 2026</span>
+        </a>
       </li>
     </ul>
   </section>
